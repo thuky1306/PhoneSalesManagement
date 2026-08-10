@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>PhoneSale</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="css/slick.css" />
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/cart.css" />
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+		<!-- TOP HEADER -->
+		<div id="top-header">
+			<div class="container">
+				<ul class="header-links pull-left">
+					<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+					<li><a href="#"><i class="fa fa-envelope-o"></i> cskh@phonesale.com</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> 218-220 Trần Quang Khải, Q1, TP.HCM</a></li>
+				</ul>
+				<ul class="header-links pull-right">
+					<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+					<li><a href="profile.html"><i class="fa fa-user-o"></i> Tài khoản</a></li>
+					<li><a href="login.html">Đăng nhập</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /TOP HEADER -->
+
+		<!-- MAIN HEADER -->
+		<div id="header">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- LOGO -->
+					<div class="col-md-3">
+						<div class="header-logo">
+							<a href="index.html" class="logo-text">
+								<span class="brand-phone">Phone</span><span class="brand-sale">Sale</span><span
+									class="brand-dot">.</span>
+							</a>
+						</div>
+					</div>
+					<!-- /LOGO -->
+
+					<!-- SEARCH BAR -->
+					<div class="col-md-6">
+						<div class="header-search">
+							<form>
+								<select class="input-select">
+									<option value="0">All Categories</option>
+									<option value="1">Category 01</option>
+									<option value="1">Category 02</option>
+								</select>
+								<input class="input" placeholder="Search here">
+								<button class="search-btn">Search</button>
+							</form>
+						</div>
+					</div>
+					<!-- /SEARCH BAR -->
+
+					<!-- ACCOUNT -->
+					<div class="col-md-3 clearfix">
+						<div class="header-ctn">
+							<!-- Wishlist -->
+							<div>
+								<a href="#">
+									<i class="fa fa-heart-o"></i>
+									<span>Yêu thích</span>
+									<div class="qty">2</div>
+								</a>
+							</div>
+							<!-- /Wishlist -->
+
+							<!-- Cart -->
+							<div class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+									<i class="fa fa-shopping-cart"></i>
+									<span>Giỏ Hàng</span>
+									<div class="qty">3</div>
+								</a>
+								<div class="cart-dropdown">
+									<div class="cart-list">
+										<div class="product-widget">
+											<div class="product-img">
+												<img src="./img/product01.png" alt="">
+											</div>
+											<div class="product-body">
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+											</div>
+											<button class="delete"><i class="fa fa-close"></i></button>
+										</div>
+
+										<div class="product-widget">
+											<div class="product-img">
+												<img src="./img/product02.png" alt="">
+											</div>
+											<div class="product-body">
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+											</div>
+											<button class="delete"><i class="fa fa-close"></i></button>
+										</div>
+									</div>
+									<div class="cart-summary">
+										<small>3 Item(s) selected</small>
+										<h5>SUBTOTAL: $2940.00</h5>
+									</div>
+									<div class="cart-btns">
+										<a href="cart.html">Xem giỏ hàng</a>
+										<a href="#">Đặt hàng <i class="fa fa-arrow-circle-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<!-- /Cart -->
+
+							<!-- Menu Toogle -->
+							<div class="menu-toggle">
+								<a href="#">
+									<i class="fa fa-bars"></i>
+									<span>Menu</span>
+								</a>
+							</div>
+							<!-- /Menu Toogle -->
+						</div>
+					</div>
+					<!-- /ACCOUNT -->
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</div>
+		<!-- /MAIN HEADER -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- NAVIGATION -->
+	<nav id="navigation">
+		<!-- container -->
+		<div class="container">
+			<!-- responsive-nav -->
+			<div id="responsive-nav">
+				<!-- NAV -->
+
+				<!-- /NAV -->
+			</div>
+			<!-- /responsive-nav -->
+		</div>
+		<!-- /container -->
+	</nav>
+	<!-- /NAVIGATION -->
+
+	<!-- CSS Cho Contact Section -->
+	<style>
+		:root {
+			--primary: #d10024;
+			--primary-hover: #a8001d;
+			--dark: #1e1f29;
+			--text-main: #2b2d42;
+			--text-muted: #8d99ae;
+			--bg-light: #f8f9fa;
+			--border-color: #eef0f4;
+			--radius: 12px;
+			--shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
+		}
+
+		.contact-section {
+			padding: 60px 0;
+			background-color: #f6f8fb;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.contact-card {
+			background: #ffffff;
+			border-radius: var(--radius);
+			box-shadow: var(--shadow-sm);
+			border: 1px solid var(--border-color);
+			padding: 32px;
+			height: 100%;
+		}
+
+		.contact-title {
+			font-size: 20px;
+			font-weight: 700;
+			color: var(--dark);
+			margin-bottom: 8px;
+			text-transform: uppercase;
+		}
+
+		.contact-desc {
+			font-size: 13px;
+			color: var(--text-muted);
+			margin-bottom: 24px;
+			line-height: 1.5;
+		}
+
+		/* Contact Info Items */
+		.info-list {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			margin-bottom: 30px;
+		}
+
+		.info-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 16px;
+		}
+
+		.info-icon {
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			background: #fff0f2;
+			color: var(--primary);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 18px;
+			flex-shrink: 0;
+		}
+
+		.info-content h5 {
+			font-size: 13px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: var(--dark);
+			margin-bottom: 4px;
+		}
+
+		.info-content p {
+			font-size: 14px;
+			color: var(--text-main);
+			margin: 0;
+			line-height: 1.4;
+		}
+
+		.info-content a {
+			color: var(--text-main);
+			text-decoration: none;
+			transition: color 0.2s ease;
+		}
+
+		.info-content a:hover {
+			color: var(--primary);
+		}
+
+		/* Contact Form Elements */
+		.contact-form .form-group {
+			margin-bottom: 18px;
+		}
+
+		.contact-form .form-label {
+			display: block;
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: var(--dark);
+			margin-bottom: 8px;
+		}
+
+		.contact-form .form-control {
+			width: 100%;
+			padding: 12px 14px;
+			border: 1px solid var(--border-color);
+			border-radius: 8px;
+			font-size: 14px;
+			font-family: inherit;
+			color: var(--text-main);
+			background: #fbfbfd;
+			outline: none;
+			transition: all 0.2s ease;
+		}
+
+		.contact-form .form-control:focus {
+			border-color: var(--primary);
+			background: #ffffff;
+			box-shadow: 0 0 0 3px rgba(209, 0, 36, 0.1);
+		}
+
+		.contact-form textarea.form-control {
+			resize: vertical;
+			min-height: 120px;
+		}
+
+		.btn-send-contact {
+			background: var(--primary);
+			color: #ffffff;
+			border: none;
+			padding: 14px 28px;
+			border-radius: 8px;
+			font-size: 13px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			cursor: pointer;
+			box-shadow: 0 4px 12px rgba(209, 0, 36, 0.3);
+			transition: all 0.3s ease;
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+		}
+
+		.btn-send-contact:hover {
+			background: var(--primary-hover);
+			box-shadow: 0 6px 18px rgba(209, 0, 36, 0.4);
+			transform: translateY(-1px);
+		}
+
+		/* Map Box */
+		.map-box {
+			width: 100%;
+			height: 220px;
+			border-radius: 8px;
+			overflow: hidden;
+			border: 1px solid var(--border-color);
+		}
+
+		.map-box iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+	</style>
+
+	<!-- HTML Contact Section -->
+	<div class="contact-section">
+		<div class="container">
+			<div class="row" style="display: flex; flex-wrap: wrap; margin: -12px;">
+
+				<!-- Cột trái: Thông tin liên hệ & Bản đồ -->
+				<div class="col-md-5" style="padding: 12px; flex: 0 0 41.666667%; max-width: 41.666667%;">
+					<div class="contact-card">
+						<h3 class="contact-title">Thông tin liên hệ</h3>
+						<p class="contact-desc">Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn 24/7.
+						</p>
+
+						<div class="info-list">
+							<div class="info-item">
+								<div class="info-icon"><i class="fa fa-map-marker"></i></div>
+								<div class="info-content">
+									<h5>Địa chỉ cửa hàng</h5>
+									<p>218-220 Trần Quang Khải, Q1, TP.HCM</p>
+								</div>
+							</div>
+
+							<div class="info-item">
+								<div class="info-icon"><i class="fa fa-phone"></i></div>
+								<div class="info-content">
+									<h5>Hotline hỗ trợ</h5>
+									<p><a href="tel:19001234">1900 1234</a> - <a href="tel:0912345678">0912 345 678</a>
+									</p>
+								</div>
+							</div>
+
+							<div class="info-item">
+								<div class="info-icon"><i class="fa fa-envelope"></i></div>
+								<div class="info-content">
+									<h5>Email liên hệ</h5>
+									<p><a href="mailto:support@electro.vn">support@electro.vn</a></p>
+								</div>
+							</div>
+
+							<div class="info-item">
+								<div class="info-icon"><i class="fa fa-clock-o"></i></div>
+								<div class="info-content">
+									<h5>Giờ làm việc</h5>
+									<p>8:00 - 21:30 (Tất cả các ngày trong tuần)</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Bản đồ nhúng -->
+						<div class="map-box">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2594775326675!2d106.68530137573607!3d10.791427858915418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d29ef3ff0f%3A0x13d1c51c66c8ed63!2zMjE4IFRy4bqnbiBRdWFuZyBLaOG6o2ksIFTDom4gxJDhu4tuaCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1786363262297!5m2!1svi!2s"
+								width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="strict-origin-when-cross-origin"></iframe>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cột phải: Form gửi tin nhắn -->
+				<div class="col-md-7" style="padding: 12px; flex: 0 0 58.333333%; max-width: 58.333333%;">
+					<div class="contact-card">
+						<h3 class="contact-title">Gửi tin nhắn cho chúng tôi</h3>
+						<p class="contact-desc">Vui lòng điền thông tin bên dưới, bộ phận CSKH sẽ phản hồi trong vòng 24
+							giờ.</p>
+
+						<form id="contactForm" class="contact-form" action="#" method="POST" novalidate>
+							<div style="display: flex; gap: 16px;">
+								<div class="form-group" style="flex: 1;">
+									<label class="form-label">Họ và tên *</label>
+									<input type="text" id="contactName" class="form-control" placeholder="Nguyễn Văn A">
+								</div>
+								<div class="form-group" style="flex: 1;">
+									<label class="form-label">Số điện thoại *</label>
+									<input type="tel" id="contactPhone" class="form-control" placeholder="0912 345 678">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="form-label">Địa chỉ Email *</label>
+								<input type="email" id="contactEmail" class="form-control"
+									placeholder="name@domain.com">
+							</div>
+
+							<div class="form-group">
+								<label class="form-label">Chủ đề cần tư vấn</label>
+								<input type="text" id="contactSubject" class="form-control"
+									placeholder="Hỏi về sản phẩm, tư vấn bảo hành...">
+							</div>
+
+							<div class="form-group">
+								<label class="form-label">Nội dung tin nhắn *</label>
+								<textarea id="contactMessage" class="form-control"
+									placeholder="Nhập chi tiết nội dung bạn muốn gửi..."></textarea>
+							</div>
+
+							<button type="submit" class="btn-send-contact">
+								Gửi tin nhắn <i class="fa fa-paper-plane"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<!-- top footer -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Về PhoneSale</h3>
+							<p>PhoneSale chuyên cung cấp các dòng điện thoại chính hãng, giá tốt nhất thị trường cùng
+								chính sách bảo hành uy tín.</p>
+							<ul class="footer-links">
+								<li><a href="#"><i class="fa fa-map-marker"></i>123 Đường Cầu Giấy, Hà Nội</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i>1900 1234 - 0988 123 456</a></li>
+								<li><a href="#"><i class="fa fa-envelope-o"></i>hotro@phonesale.vn</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Danh Mục Sản Phẩm</h3>
+							<ul class="footer-links">
+								<li><a href="#">Khuyến mãi hot</a></li>
+								<li><a href="#">iPhone / iOS</a></li>
+								<li><a href="#">Điện thoại Android</a></li>
+								<li><a href="#">Máy tính bảng</a></li>
+								<li><a href="#">Phụ kiện điện thoại</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="clearfix visible-xs"></div>
+
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Thông Tin</h3>
+							<ul class="footer-links">
+								<li><a href="#">Giới thiệu PhoneSale</a></li>
+								<li><a href="contact.html">Liên hệ</a></li>
+								<li><a href="#">Chính sách bảo mật</a></li>
+								<li><a href="#">Đổi trả & Bảo hành</a></li>
+								<li><a href="#">Điều khoản sử dụng</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Dịch Vụ Khách Hàng</h3>
+							<ul class="footer-links">
+								<li><a href="#">Tài khoản của tôi</a></li>
+								<li><a href="#">Xem giỏ hàng</a></li>
+								<li><a href="#">Sản phẩm yêu thích</a></li>
+								<li><a href="#">Tra cứu đơn hàng</a></li>
+								<li><a href="#">Trung tâm trợ giúp</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /top footer -->
+
+		<!-- bottom footer -->
+		<div id="bottom-footer" class="section">
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12 text-center">
+
+						<span class="copyright">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Bản quyền &copy;
+							<script>document.write(new Date().getFullYear());</script> Bổn mạng thuộc về PhoneSale | Mẫu
+							thiết kế bởi <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</span>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /bottom footer -->
+	</footer>
+	<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
