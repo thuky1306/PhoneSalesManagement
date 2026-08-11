@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // 1. Tải giỏ hàng khi vào trang
     renderCart();
 
     const btnClearCart = document.getElementById('btnClearCart');
@@ -36,7 +35,7 @@ function renderCart() {
                 </td>
             </tr>
         `;
-        updateOrderSummary(0);
+        updateOrderSummary(0, 0);
         return;
     }
 
@@ -79,9 +78,10 @@ function renderCart() {
         `;
     }).join('');
 
-    // Cập nhật tổng tiền toàn bộx giỏ hàng
-    const grandTotal = cart.reduce((sum, item) => sum + (item.unitPrice * item.quantity), 0);
-    updateOrderSummary(grandTotal);
+    const totalQuantity = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
+    const grandTotal = cart.reduce((sum, item) => sum + ((item.unitPrice || 0) * (item.quantity || 1)), 0);
+
+    updateOrderSummary(grandTotal, totalQuantity);
 }
 
 function updateQty(index, change) {
@@ -142,9 +142,21 @@ function clearCart() {
     }
 }
 
-function updateOrderSummary(grandTotal) {
-    const totalElement = document.getElementById('grand-total');
-    if (totalElement) {
-        totalElement.textContent = formatCurrency(grandTotal);
+function updateOrderSummary(grandTotal, totalQuantity) {
+    const summaryContainer = document.querySelector('.summary-card');
+    if (!summaryContainer) return;
+
+    const subtotalText = summaryContainer.querySelector('.summary-row:first-of-type span:last-child');
+    const subtotalLabel = summaryContainer.querySelector('.summary-row:first-of-type span:first-child');
+    const totalPriceText = summaryContainer.querySelector('.summary-total-price');
+
+    if (subtotalLabel) {
+        subtotalLabel.textContent = `Tạm tính (${totalQuantity} sản phẩm)`;
+    }
+    if (subtotalText) {
+        subtotalText.textContent = formatCurrency(grandTotal);
+    }
+    if (totalPriceText) {
+        totalPriceText.textContent = formatCurrency(grandTotal);
     }
 }
