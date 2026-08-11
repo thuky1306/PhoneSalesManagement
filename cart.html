@@ -42,10 +42,9 @@
 					<li><a href="#"><i class="fa fa-envelope-o"></i> cskh@phonesale.com</a></li>
 					<li><a href="#"><i class="fa fa-map-marker"></i> 218-220 Trần Quang Khải, Q1, TP.HCM</a></li>
 				</ul>
-				<ul class="header-links pull-right">
+				<ul class="header-links pull-right" id="auth-links">
 					<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-					<li><a href="profile.html"><i class="fa fa-user-o"></i> Tài khoản</a></li>
-					<li><a href="login.html">Đăng nhập</a></li>
+
 				</ul>
 			</div>
 		</div>
@@ -72,7 +71,7 @@
 					<div class="col-md-6">
 						<div class="header-search">
 							<form action="products.html">
-								
+
 								<input class="input" placeholder="Search here">
 								<button class="search-btn">Search</button>
 							</form>
@@ -83,48 +82,15 @@
 					<!-- ACCOUNT -->
 					<div class="col-md-3 clearfix">
 						<div class="header-ctn">
-							
+
 
 							<!-- Cart -->
 							<div class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+								<a href="cart.html">
 									<i class="fa fa-shopping-cart"></i>
 									<span>Giỏ Hàng</span>
-									<div class="qty">3</div>
+									
 								</a>
-								<div class="cart-dropdown">
-									<div class="cart-list">
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product01.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product02.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-									</div>
-									<div class="cart-summary">
-										<small>3 Item(s) selected</small>
-										<h5>SUBTOTAL: $2940.00</h5>
-									</div>
-									<div class="cart-btns">
-										<a href="cart.html">Xem giỏ hàng</a>
-										<a href="#">Đặt hàng <i class="fa fa-arrow-circle-right"></i></a>
-									</div>
-								</div>
 							</div>
 							<!-- /Cart -->
 
@@ -165,361 +131,6 @@
 	<!-- /NAVIGATION -->
 
 
-	<!-- SECTION -->
-	<!-- CSS Tối Ưu & Làm Đẹp Cho Cart Section -->
-	<style>
-		/* Reset & Base variables */
-		:root {
-			--primary-color: #d10024;
-			--primary-hover: #a8001d;
-			--dark-color: #1e1f29;
-			--text-color: #2b2d42;
-			--text-muted: #8d99ae;
-			--bg-light: #f8f9fa;
-			--border-color: #eef0f4;
-			--shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
-			--shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
-			--radius: 12px;
-		}
-
-		.cart-section {
-			padding: 40px 0;
-			background-color: #f6f8fb;
-			font-family: 'Montserrat', sans-serif;
-		}
-
-		.cart-section .section-title {
-			margin-bottom: 25px;
-		}
-
-		.cart-section .section-title h3 {
-			font-size: 24px;
-			font-weight: 700;
-			color: var(--dark-color);
-			margin: 0;
-			display: flex;
-			align-items: center;
-			gap: 10px;
-		}
-
-		/* Card Wrapper */
-		.cart-card {
-			background: #ffffff;
-			border-radius: var(--radius);
-			box-shadow: var(--shadow-sm);
-			border: 1px solid var(--border-color);
-			padding: 24px;
-			margin-bottom: 24px;
-		}
-
-		/* Table Styling */
-		.cart-table {
-			width: 100%;
-			border-collapse: separate;
-			border-spacing: 0;
-		}
-
-		.cart-table th {
-			font-size: 12px;
-			text-transform: uppercase;
-			letter-spacing: 0.5px;
-			color: var(--text-muted);
-			font-weight: 600;
-			padding-bottom: 16px;
-			border-bottom: 2px solid var(--border-color);
-		}
-
-		.cart-table td {
-			padding: 20px 0;
-			border-bottom: 1px solid var(--border-color);
-			vertical-align: middle;
-		}
-
-		.cart-table tr:last-child td {
-			border-bottom: none;
-		}
-
-		/* Product Item */
-		.cart-item-info {
-			display: flex;
-			align-items: center;
-			gap: 16px;
-		}
-
-		.cart-item-img {
-			width: 80px;
-			height: 80px;
-			border-radius: 8px;
-			background: #fbfbfd;
-			border: 1px solid var(--border-color);
-			padding: 6px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-shrink: 0;
-			transition: transform 0.2s ease;
-		}
-
-		.cart-item-img:hover {
-			transform: scale(1.03);
-		}
-
-		.cart-item-img img {
-			max-width: 100%;
-			max-height: 100%;
-			object-fit: contain;
-		}
-
-		.cart-item-details .category {
-			font-size: 11px;
-			text-transform: uppercase;
-			color: var(--text-muted);
-			font-weight: 600;
-			margin-bottom: 4px;
-		}
-
-		.cart-item-details .name {
-			font-size: 15px;
-			font-weight: 600;
-			color: var(--dark-color);
-			margin: 0;
-			text-decoration: none;
-			transition: color 0.2s ease;
-		}
-
-		.cart-item-details .name:hover {
-			color: var(--primary-color);
-		}
-
-		/* Quantity Box */
-		.qty-box {
-			display: inline-flex;
-			align-items: center;
-			background: #f1f3f7;
-			border-radius: 8px;
-			padding: 4px;
-		}
-
-		.qty-btn {
-			width: 28px;
-			height: 28px;
-			border: none;
-			background: #ffffff;
-			border-radius: 6px;
-			color: var(--dark-color);
-			font-weight: 700;
-			cursor: pointer;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-			transition: all 0.2s ease;
-		}
-
-		.qty-btn:hover {
-			background: var(--primary-color);
-			color: #fff;
-		}
-
-		.qty-input {
-			width: 40px;
-			border: none;
-			background: transparent;
-			text-align: center;
-			font-weight: 600;
-			font-size: 14px;
-			color: var(--dark-color);
-			outline: none;
-		}
-
-		/* Prices & Actions */
-		.price-text {
-			font-size: 15px;
-			font-weight: 700;
-			color: var(--dark-color);
-		}
-
-		.subtotal-text {
-			font-size: 16px;
-			font-weight: 700;
-			color: var(--primary-color);
-		}
-
-		.btn-remove {
-			background: #fff0f2;
-			border: none;
-			width: 32px;
-			height: 32px;
-			border-radius: 50%;
-			color: var(--primary-color);
-			cursor: pointer;
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			transition: all 0.2s ease;
-		}
-
-		.btn-remove:hover {
-			background: var(--primary-color);
-			color: #fff;
-		}
-
-		/* Cart Action Bar */
-		.cart-actions {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-top: 10px;
-		}
-
-		.btn-continue {
-			color: var(--text-color);
-			text-decoration: none;
-			font-weight: 600;
-			font-size: 14px;
-			display: flex;
-			align-items: center;
-			gap: 8px;
-			transition: color 0.2s ease;
-		}
-
-		.btn-continue:hover {
-			color: var(--primary-color);
-		}
-
-		.btn-clear-cart {
-			background: transparent;
-			border: 1px solid #e0e0e0;
-			padding: 8px 16px;
-			border-radius: 8px;
-			color: var(--text-muted);
-			font-size: 13px;
-			font-weight: 600;
-			cursor: pointer;
-			transition: all 0.2s ease;
-		}
-
-		.btn-clear-cart:hover {
-			border-color: var(--primary-color);
-			color: var(--primary-color);
-			background: #fff0f2;
-		}
-
-		/* Order Summary Side */
-		.summary-card {
-			background: #ffffff;
-			border-radius: var(--radius);
-			box-shadow: var(--shadow-sm);
-			border: 1px solid var(--border-color);
-			padding: 24px;
-		}
-
-		.summary-title {
-			font-size: 16px;
-			font-weight: 700;
-			color: var(--dark-color);
-			text-transform: uppercase;
-			margin-bottom: 20px;
-			padding-bottom: 12px;
-			border-bottom: 2px solid var(--border-color);
-		}
-
-		.coupon-box {
-			display: flex;
-			gap: 8px;
-			margin-bottom: 20px;
-		}
-
-		.coupon-input {
-			flex: 1;
-			padding: 10px 14px;
-			border: 1px solid var(--border-color);
-			border-radius: 8px;
-			font-size: 13px;
-			outline: none;
-			background: #fbfbfd;
-			transition: border 0.2s ease;
-		}
-
-		.coupon-input:focus {
-			border-color: var(--primary-color);
-			background: #fff;
-		}
-
-		.btn-apply-coupon {
-			background: var(--dark-color);
-			color: #fff;
-			border: none;
-			padding: 10px 18px;
-			border-radius: 8px;
-			font-weight: 600;
-			font-size: 13px;
-			cursor: pointer;
-			transition: background 0.2s ease;
-		}
-
-		.btn-apply-coupon:hover {
-			background: var(--primary-color);
-		}
-
-		.summary-row {
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: 14px;
-			font-size: 14px;
-			color: var(--text-color);
-		}
-
-		.summary-divider {
-			height: 1px;
-			background: var(--border-color);
-			margin: 16px 0;
-		}
-
-		.summary-total {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-bottom: 24px;
-		}
-
-		.summary-total span {
-			font-size: 16px;
-			font-weight: 700;
-			text-transform: uppercase;
-			color: var(--dark-color);
-		}
-
-		.summary-total-price {
-			font-size: 22px;
-			font-weight: 800;
-			color: var(--primary-color);
-		}
-
-		.btn-checkout {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 10px;
-			width: 100%;
-			background: var(--primary-color);
-			color: #ffffff;
-			padding: 14px 0;
-			border-radius: 8px;
-			font-weight: 700;
-			font-size: 15px;
-			text-transform: uppercase;
-			text-decoration: none;
-			box-shadow: 0 4px 14px rgba(209, 0, 36, 0.3);
-			transition: all 0.3s ease;
-		}
-
-		.btn-checkout:hover {
-			background: var(--primary-hover);
-			box-shadow: 0 6px 20px rgba(209, 0, 36, 0.4);
-			color: #fff;
-		}
-	</style>
 
 	<!-- HTML Cart Section -->
 	<div class="cart-section">
@@ -548,71 +159,15 @@
 									<th style="width: 5%; text-align: center;"></th>
 								</tr>
 							</thead>
-							<tbody>
-								<!-- Item 1 -->
-								<tr>
-									<td>
-										<div class="cart-item-info">
-											<div class="cart-item-img">
-												<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png"
-													alt="iPhone 15 Pro Max">
-											</div>
-											<div class="cart-item-details">
-												<div class="category">Apple</div>
-												<a href="#" class="name">iPhone 15 Pro Max 256GB</a>
-											</div>
-										</div>
-									</td>
-									<td><span class="price-text">29.490.000₫</span></td>
-									<td style="text-align: center;">
-										<div class="qty-box">
-											<button class="qty-btn">-</button>
-											<input type="number" class="qty-input" value="1" min="1">
-											<button class="qty-btn">+</button>
-										</div>
-									</td>
-									<td style="text-align: right;"><span class="subtotal-text">29.490.000₫</span></td>
-									<td style="text-align: center;">
-										<button class="btn-remove" title="Xóa"><i class="fa fa-times"></i></button>
-									</td>
-								</tr>
-
-								<!-- Item 2 -->
-								<tr>
-									<td>
-										<div class="cart-item-info">
-											<div class="cart-item-img">
-												<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4cWmHmUafnNOOU9VuZisDXQL3YYeNwfvotDZWSv1bvrZSPmiNM7CWYOg&s=10"
-													alt="ASUS ROG Phone 8 Pro">
-											</div>
-											<div class="cart-item-details">
-												<div class="category">ASUS</div>
-												<a href="#" class="name">ASUS ROG Phone 8 Pro 16GB/512GB</a>
-											</div>
-										</div>
-									</td>
-									<td><span class="price-text">26.990.000₫</span></td>
-									<td style="text-align: center;">
-										<div class="qty-box">
-											<button class="qty-btn">-</button>
-											<input type="number" class="qty-input" value="1" min="1">
-											<button class="qty-btn">+</button>
-										</div>
-									</td>
-									<td style="text-align: right;"><span class="subtotal-text">26.990.000₫</span></td>
-									<td style="text-align: center;">
-										<button class="btn-remove" title="Xóa"><i class="fa fa-times"></i></button>
-									</td>
-								</tr>
+							<tbody id="cart-tbody">
 							</tbody>
 						</table>
 
-						<!-- Nút thao tác dưới giỏ hàng -->
 						<div class="cart-actions">
-							<a href="#" class="btn-continue">
+							<a href="index.html" class="btn-continue">
 								<i class="fa fa-arrow-left"></i> Tiếp tục chọn sản phẩm
 							</a>
-							<button class="btn-clear-cart">
+							<button class="btn-clear-cart" id="btnClearCart">
 								<i class="fa fa-trash-o"></i> Xóa tất cả
 							</button>
 						</div>
@@ -969,6 +524,56 @@
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.zoom.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/cart.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const authContainer = document.getElementById('auth-links');
+
+			const currentUser = JSON.parse(localStorage.getItem('currentUser')) ||
+				JSON.parse(sessionStorage.getItem('currentUser'));
+
+			if (currentUser) {
+				authContainer.innerHTML = `
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa fa-user-o"></i> ${currentUser.fullName || 'Tài khoản'}
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="btnLogout">
+                        <i class="fa fa-sign-out"></i> Đăng xuất
+                    </a>
+                </li>
+            `;
+
+				document.getElementById('btnLogout').addEventListener('click', function (e) {
+					e.preventDefault();
+
+					localStorage.removeItem('currentUser');
+					sessionStorage.removeItem('currentUser');
+
+					alert('Đã đăng xuất thành công!');
+					window.location.reload(); 
+				});
+
+			} else {
+				authContainer.innerHTML = `
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-in"></i> Đăng nhập
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-user-plus"></i> Đăng ký
+                    </a>
+                </li>
+            `;
+			}
+		});
+	</script>
 
 </body>
 

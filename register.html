@@ -4,218 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Đăng Ký - Electro Store</title>
+	<title>Đăng Ký - PhoneSale Store</title>
 	<!-- Google Font & FontAwesome Icon -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<style>
-		:root {
-			--primary: #d10024;
-			--primary-hover: #a8001d;
-			--dark: #1e1f29;
-			--text-main: #2b2d42;
-			--text-muted: #8d99ae;
-			--bg-body: #f4f6f9;
-			--border-color: #eef0f4;
-			--radius: 12px;
-			--shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-		}
-
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-
-		body {
-			font-family: 'Montserrat', sans-serif;
-			background: var(--bg-body);
-			color: var(--text-main);
-			min-height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 25px 20px;
-		}
-
-		.auth-card {
-			background: #ffffff;
-			width: 100%;
-			max-width: 480px;
-			border-radius: var(--radius);
-			box-shadow: var(--shadow);
-			border: 1px solid var(--border-color);
-			padding: 40px 32px;
-			transition: all 0.3s ease;
-		}
-
-		.auth-header {
-			text-align: center;
-			margin-bottom: 28px;
-		}
-
-		.auth-header .brand-logo {
-			font-size: 26px;
-			font-weight: 800;
-			color: var(--dark);
-			text-decoration: none;
-			letter-spacing: -0.5px;
-			display: inline-block;
-			margin-bottom: 12px;
-		}
-
-		.auth-header .brand-logo span {
-			color: var(--primary);
-		}
-
-		.auth-header h2 {
-			font-size: 22px;
-			font-weight: 700;
-			color: var(--dark);
-			margin-bottom: 6px;
-		}
-
-		.auth-header p {
-			font-size: 13px;
-			color: var(--text-muted);
-		}
-
-		/* Form Grid for First/Last Name */
-		.form-row {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 14px;
-		}
-
-		/* Form Controls */
-		.form-group {
-			margin-bottom: 18px;
-			position: relative;
-		}
-
-		.form-label {
-			display: block;
-			font-size: 12px;
-			font-weight: 700;
-			text-transform: uppercase;
-			color: var(--dark);
-			margin-bottom: 8px;
-			letter-spacing: 0.3px;
-		}
-
-		.input-wrapper {
-			position: relative;
-			display: flex;
-			align-items: center;
-		}
-
-		.input-wrapper i.input-icon {
-			position: absolute;
-			left: 14px;
-			color: var(--text-muted);
-			font-size: 15px;
-		}
-
-		.form-input {
-			width: 100%;
-			padding: 12px 14px 12px 42px;
-			border: 1px solid var(--border-color);
-			border-radius: 8px;
-			font-size: 14px;
-			font-family: inherit;
-			color: var(--text-main);
-			background: #fbfbfd;
-			outline: none;
-			transition: all 0.2s ease;
-		}
-
-		.form-input:focus {
-			border-color: var(--primary);
-			background: #ffffff;
-			box-shadow: 0 0 0 3px rgba(209, 0, 36, 0.1);
-		}
-
-		.toggle-password {
-			position: absolute;
-			right: 14px;
-			cursor: pointer;
-			color: var(--text-muted);
-			font-size: 14px;
-		}
-
-		/* Terms Checkbox */
-		.terms-check {
-			display: flex;
-			align-items: flex-start;
-			gap: 10px;
-			margin-bottom: 22px;
-			font-size: 12px;
-			color: var(--text-muted);
-			line-height: 1.4;
-		}
-
-		.terms-check input {
-			accent-color: var(--primary);
-			width: 16px;
-			height: 16px;
-			margin-top: 2px;
-			cursor: pointer;
-			flex-shrink: 0;
-		}
-
-		.terms-check a {
-			color: var(--primary);
-			text-decoration: none;
-			font-weight: 600;
-		}
-
-		.terms-check a:hover {
-			text-decoration: underline;
-		}
-
-		/* Submit Button */
-		.btn-primary {
-			width: 100%;
-			background: var(--primary);
-			color: #ffffff;
-			border: none;
-			padding: 14px;
-			border-radius: 8px;
-			font-size: 14px;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 0.5px;
-			cursor: pointer;
-			box-shadow: 0 4px 12px rgba(209, 0, 36, 0.3);
-			transition: all 0.3s ease;
-		}
-
-		.btn-primary:hover {
-			background: var(--primary-hover);
-			box-shadow: 0 6px 18px rgba(209, 0, 36, 0.4);
-			transform: translateY(-1px);
-		}
-
-		/* Footer */
-		.auth-footer {
-			text-align: center;
-			margin-top: 24px;
-			font-size: 13px;
-			color: var(--text-muted);
-		}
-
-		.auth-footer a {
-			color: var(--primary);
-			font-weight: 700;
-			text-decoration: none;
-		}
-
-		.auth-footer a:hover {
-			text-decoration: underline;
-		}
-	</style>
+	<link rel="stylesheet" href="css/register.css">
 </head>
 
 <body>
@@ -229,7 +24,7 @@
 		</div>
 
 		<!-- Register Form -->
-		<form action="login.html" method="POST">
+		<form id="registerForm" novalidate>
 			<!-- Họ & Tên -->
 			<div class="form-row">
 				<div class="form-group">
@@ -261,7 +56,7 @@
 				<label class="form-label">Số điện thoại</label>
 				<div class="input-wrapper">
 					<i class="fa fa-phone input-icon"></i>
-					<input type="tel" class="form-input" placeholder="0912 345 678" required>
+					<input type="tel" class="form-input" placeholder="01234567890" required>
 				</div>
 			</div>
 
@@ -275,7 +70,6 @@
 				</div>
 			</div>
 
-			<!-- Xác nhận mật khẩu -->
 			<div class="form-group">
 				<label class="form-label">Xác nhận mật khẩu</label>
 				<div class="input-wrapper">
@@ -287,25 +81,36 @@
 				</div>
 			</div>
 
-			<!-- Điều khoản -->
 			<label class="terms-check">
 				<input type="checkbox" required>
 				<span>Tôi đã đọc và đồng ý với <a href="#">Điều khoản sử dụng</a> và <a href="#">Chính sách bảo mật</a>
-					của Electro.</span>
+					của PhoneSale.</span>
 			</label>
 
 			<button type="submit" class="btn-primary">Đăng Ký Tài Khoản</button>
 		</form>
 
-		<!-- Footer Link -->
 		<div class="auth-footer">
 			Bạn đã có tài khoản? <a href="login.html">Đăng nhập tại đây</a>
 		</div>
 	</div>
 
 	<script>
+		function togglePasswordVisibility(inputId, icon) {
+			const input = document.getElementById(inputId);
+			if (input.type === 'password') {
+				input.type = 'text';
+				icon.classList.remove('fa-eye');
+				icon.classList.add('fa-eye-slash');
+			} else {
+				input.type = 'password';
+				icon.classList.remove('fa-eye-slash');
+				icon.classList.add('fa-eye');
+			}
+		}
+
 		document.addEventListener('DOMContentLoaded', function () {
-			const registerForm = document.querySelector('form');
+			const registerForm = document.getElementById('registerForm');
 			const lastNameInput = registerForm.querySelectorAll('.form-row input')[0];
 			const firstNameInput = registerForm.querySelectorAll('.form-row input')[1];
 			const emailInput = registerForm.querySelector('input[type="email"]');
@@ -353,12 +158,14 @@
 			}
 
 			function validateEmail(input) {
-				const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-				if (input.value.trim() === '') {
+				const emailValue = input.value.trim();
+				const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/i;
+
+				if (emailValue === '') {
 					showError(input, 'Vui lòng nhập địa chỉ Email.');
 					return false;
-				} else if (!emailRegex.test(input.value.trim())) {
-					showError(input, 'Địa chỉ Email không đúng định dạng.');
+				} else if (!gmailRegex.test(emailValue)) {
+					showError(input, 'Email phải đúng định dạng chuẩn Gmail (ví dụ: tenban@gmail.com).');
 					return false;
 				}
 				clearError(input);
@@ -366,12 +173,15 @@
 			}
 
 			function validatePhone(input) {
-				const phoneRegex = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
-				if (input.value.trim() === '') {
+				const phoneValue = input.value.trim();
+				// Bắt buộc đúng 11 chữ số
+				const phoneRegex = /^[0-9]{11}$/;
+
+				if (phoneValue === '') {
 					showError(input, 'Vui lòng nhập số điện thoại.');
 					return false;
-				} else if (!phoneRegex.test(input.value.trim())) {
-					showError(input, 'Số điện thoại không hợp lệ (ví dụ: 0912345678).');
+				} else if (!phoneRegex.test(phoneValue)) {
+					showError(input, 'Số điện thoại phải bao gồm đúng 11 chữ số.');
 					return false;
 				}
 				clearError(input);
@@ -417,6 +227,8 @@
 			termsCheckbox.addEventListener('change', () => validateTerms(termsCheckbox));
 
 			registerForm.addEventListener('submit', function (e) {
+				e.preventDefault();
+
 				const isLastNameValid = validateName(lastNameInput, 'Họ & Đệm');
 				const isFirstNameValid = validateName(firstNameInput, 'Tên');
 				const isEmailValid = validateEmail(emailInput);
@@ -425,8 +237,43 @@
 				const isConfirmValid = validateConfirmPassword(passwordInput, confirmPasswordInput);
 				const isTermsValid = validateTerms(termsCheckbox);
 
-				if (!isLastNameValid || !isFirstNameValid || !isEmailValid || !isPhoneValid || !isPasswordValid || !isConfirmValid || !isTermsValid) {
-					e.preventDefault();
+				if (isLastNameValid && isFirstNameValid && isEmailValid && isPhoneValid && isPasswordValid && isConfirmValid && isTermsValid) {
+
+					const users = JSON.parse(localStorage.getItem('users')) || [];
+
+					const emailVal = emailInput.value.trim().toLowerCase();
+					const phoneVal = phoneInput.value.trim();
+
+					const isEmailExist = users.some(user => user.email.toLowerCase() === emailVal);
+					const isPhoneExist = users.some(user => user.phone === phoneVal);
+
+					if (isEmailExist) {
+						showError(emailInput, 'Email này đã được sử dụng.');
+						return;
+					}
+
+					if (isPhoneExist) {
+						showError(phoneInput, 'Số điện thoại này đã được sử dụng.');
+						return;
+					}
+
+					const newUser = {
+						id: Date.now(),
+						lastName: lastNameInput.value.trim(),
+						firstName: firstNameInput.value.trim(),
+						fullName: `${lastNameInput.value.trim()} ${firstNameInput.value.trim()}`,
+						email: emailVal,
+						phone: phoneVal,
+						password: passwordInput.value,
+						createdAt: new Date().toISOString()
+					};
+
+					users.push(newUser);
+					localStorage.setItem('users', JSON.stringify(users));
+
+					alert('Đăng ký tài khoản thành công!');
+
+					window.location.href = 'login.html';
 				}
 			});
 		});

@@ -43,11 +43,10 @@
 					<li><a href="#"><i class="fa fa-envelope-o"></i> cskh@phonesale.com</a></li>
 					<li><a href="#"><i class="fa fa-map-marker"></i> 218-220 Trần Quang Khải, Q1, TP.HCM</a></li>
 				</ul>
-				<ul class="header-links pull-right">
-					<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-					<li><a href="profile.html"><i class="fa fa-user-o"></i> Tài khoản</a></li>
-					<li><a href="login.html">Đăng nhập</a></li>
-				</ul>
+				<ul class="header-links pull-right" id="auth-links">
+    <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+    
+</ul>
 			</div>
 		</div>
 		<!-- /TOP HEADER -->
@@ -84,49 +83,13 @@
 					<!-- ACCOUNT -->
 					<div class="col-md-3 clearfix">
 						<div class="header-ctn">
-							
 
-							<!-- Cart -->
 							<div class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+								<a href="cart.html">
 									<i class="fa fa-shopping-cart"></i>
 									<span>Giỏ Hàng</span>
-									<div class="qty">3</div>
+									
 								</a>
-								<div class="cart-dropdown">
-									<div class="cart-list">
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/_/x_m_24.png"
-													alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product02.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-									</div>
-									<div class="cart-summary">
-										<small>3 Item(s) selected</small>
-										<h5>SUBTOTAL: $2940.00</h5>
-									</div>
-									<div class="cart-btns">
-										<a href="cart.html">Xem giỏ hàng</a>
-										<a href="#">Đặt hàng <i class="fa fa-arrow-circle-right"></i></a>
-									</div>
-								</div>
 							</div>
 							<!-- /Cart -->
 
@@ -243,86 +206,14 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Product thumb imgs -->
 
-				<!-- Product details -->
 				<!-- Product details -->
 				<div class="col-md-5">
-					<div class="product-details">
-						<h2 class="product-name">iPhone 14 Pro Max 128GB</h2>
-						<div>
-							<div class="product-rating">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-							</div>
-							<a class="review-link" href="#">128 Đánh giá | Thêm đánh giá của bạn</a>
-						</div>
-						<div>
-							<h3 class="product-price">26.990.000₫ <del class="product-old-price">29.990.000₫</del></h3>
-							<span class="product-available">Còn hàng</span>
-						</div>
-						<p>iPhone 14 Pro Max sở hữu màn hình Super Retina XDR 6.7 inch với tính năng Dynamic Island độc
-							đáo. Trang bị chip A16 Bionic mạnh mẽ, hệ thống camera 48MP chuyên nghiệp và tính năng phát
-							hiện va chạm an toàn.</p>
-
-						<div class="product-options">
-							<label>
-								Dung lượng
-								<select class="input-select">
-									<option value="128">128GB</option>
-									<option value="256">256GB</option>
-									<option value="512">512GB</option>
-									<option value="1024">1TB</option>
-								</select>
-							</label>
-							<label>
-								Màu sắc
-								<select class="input-select">
-									<option value="purple">Tím Thạch Anh (Deep Purple)</option>
-									<option value="gold">Vàng (Gold)</option>
-									<option value="space-black">Đen Không Gian (Space Black)</option>
-									<option value="silver">Bạc (Silver)</option>
-								</select>
-							</label>
-						</div>
-
-						<div class="add-to-cart">
-							<div class="qty-label">
-								Số lượng
-								<div class="input-number">
-									<input type="number" value="1">
-									<span class="qty-up">+</span>
-									<span class="qty-down">-</span>
-								</div>
-							</div>
-							<button onclick="window.location.href='cart.html'" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-								hàng</button>
-						</div>
-
-						<ul class="product-btns">
-							<li><a href="#"><i class="fa fa-heart-o"></i> Thêm vào yêu thích</a></li>
-							<li><a href="#"><i class="fa fa-exchange"></i> So sánh sản phẩm</a></li>
-						</ul>
-
-						<ul class="product-links">
-							<li>Danh mục:</li>
-							<li><a href="#">Điện thoại</a></li>
-							<li><a href="#">Apple (iPhone)</a></li>
-						</ul>
-
-						<ul class="product-links">
-							<li>Chia sẻ:</li>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-envelope"></i></a></li>
-						</ul>
-
+					<div class="product-details" id="product-details-container">
 					</div>
 				</div>
+
+				<script src="js/detail.js"></script>
 
 				<div class="col-md-12">
 					<div id="product-tab">
@@ -881,7 +772,60 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js"></script><script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const authContainer = document.getElementById('auth-links');
+
+        // Lấy thông tin user đăng nhập từ localStorage hoặc sessionStorage
+        const currentUser = JSON.parse(localStorage.getItem('currentUser')) || 
+                            JSON.parse(sessionStorage.getItem('currentUser'));
+
+        if (currentUser) {
+            // ĐÃ ĐĂNG NHẬP: Hiển thị Profile và Nút Đăng xuất
+            authContainer.innerHTML = `
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa fa-user-o"></i> ${currentUser.fullName || 'Tài khoản'}
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="btnLogout">
+                        <i class="fa fa-sign-out"></i> Đăng xuất
+                    </a>
+                </li>
+            `;
+
+            // Bắt sự kiện Đăng xuất
+            document.getElementById('btnLogout').addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Xóa phiên làm việc khỏi cả 2 bộ nhớ
+                localStorage.removeItem('currentUser');
+                sessionStorage.removeItem('currentUser');
+
+                alert('Đã đăng xuất thành công!');
+                window.location.reload(); // Tải lại trang để cập nhật giao diện
+            });
+
+        } else {
+            // CHƯA ĐĂNG NHẬP: Hiển thị Nút Đăng nhập / Đăng ký
+            authContainer.innerHTML = `
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-in"></i> Đăng nhập
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-user-plus"></i> Đăng ký
+                    </a>
+                </li>
+            `;
+        }
+    });
+</script>
 
 </body>
 

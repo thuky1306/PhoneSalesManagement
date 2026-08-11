@@ -41,11 +41,10 @@
 					<li><a href="#"><i class="fa fa-envelope-o"></i> cskh@phonesale.com</a></li>
 					<li><a href="#"><i class="fa fa-map-marker"></i> 218-220 Trần Quang Khải, Q1, TP.HCM</a></li>
 				</ul>
-				<ul class="header-links pull-right">
-					<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-					<li><a href="profile.html"><i class="fa fa-user-o"></i> Tài khoản</a></li>
-					<li><a href="login.html">Đăng nhập</a></li>
-				</ul>
+				<ul class="header-links pull-right" id="auth-links">
+    <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+    
+</ul>
 			</div>
 		</div>
 		<!-- /TOP HEADER -->
@@ -71,7 +70,7 @@
 					<div class="col-md-6">
 						<div class="header-search">
 							<form action="products.html">
-								
+
 								<input class="input" placeholder="Search here">
 								<button class="search-btn">Search</button>
 							</form>
@@ -82,50 +81,14 @@
 					<!-- ACCOUNT -->
 					<div class="col-md-3 clearfix">
 						<div class="header-ctn">
-							
 
-							<!-- Cart -->
 							<div class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+								<a href="cart.html">
 									<i class="fa fa-shopping-cart"></i>
 									<span>Giỏ Hàng</span>
-									<div class="qty">3</div>
+									
 								</a>
-								<div class="cart-dropdown">
-									<div class="cart-list">
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product01.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product02.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-									</div>
-									<div class="cart-summary">
-										<small>3 Item(s) selected</small>
-										<h5>SUBTOTAL: $2940.00</h5>
-									</div>
-									<div class="cart-btns">
-										<a href="cart.html">Xem giỏ hàng</a>
-										<a href="#">Đặt hàng <i class="fa fa-arrow-circle-right"></i></a>
-									</div>
-								</div>
 							</div>
-							<!-- /Cart -->
 
 							<!-- Menu Toogle -->
 							<div class="menu-toggle">
@@ -246,452 +209,8 @@
 
 				<!-- Products tab & slick -->
 				<div class="col-md-9">
-					<div class="row">
-						<div class="products-tabs">
-							<!-- tab: Điện thoại -->
-							<div id="tab-smartphones" class="tab-pane active">
-								<div class="products-slick" data-nav="#slick-nav-1">
-
-									<!-- Sản phẩm 1 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNBbctQQedKznqcd1AkoaFiHRRMGHPRpoVDnJPe3tbq2g7DAHgwY0f8w&s=10"
-												alt="iPhone 17 Pro Max">
-											<div class="product-label">
-												<span class="sale">-10%</span>
-												<span class="new">MỚI</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Apple</p>
-											<h3 class="product-name"><a href="#">iPhone 17 Pro Max 256GB</a></h3>
-											<h4 class="product-price">32.990.000₫ <del
-													class="product-old-price">33.290.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 1 -->
-
-									<!-- Sản phẩm 2 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg"
-												alt="Samsung Galaxy S22 Ultra">
-											<div class="product-label">
-												<span class="new">HOT</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Samsung</p>
-											<h3 class="product-name"><a href="#">Samsung Galaxy S22 Ultra 5G</a></h3>
-											<h4 class="product-price">12.990.000₫ <del
-													class="product-old-price">31.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 2 -->
-
-									<!-- Sản phẩm 3 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-14-pre-den.png"
-												alt="Xiaomi 14">
-											<div class="product-label">
-												<span class="sale">-12%</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Xiaomi</p>
-											<h3 class="product-name"><a href="#">Xiaomi 14 512GB</a></h3>
-											<h4 class="product-price">26.390.000₫ <del
-													class="product-old-price">29.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-o"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 3 -->
-
-									<!-- Sản phẩm 4 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/2/s23-ultra-tim_6_2.png"
-												alt="Samsung Galaxy S23 Ultra">
-											<div class="product-label">
-												<span class="new">HOT</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Samsung</p>
-											<h3 class="product-name"><a href="#">Samsung Galaxy S23 Ultra 5G</a></h3>
-											<h4 class="product-price">16.990.000₫ <del
-													class="product-old-price">31.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-
-
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="products-tabs">
-							<!-- tab: Điện thoại -->
-							<div id="tab-smartphones" class="tab-pane active">
-								<div class="products-slick" data-nav="#slick-nav-1">
-
-									<!-- Sản phẩm 1: iPhone 16 Pro Max -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png"
-												alt="iPhone 16 Pro Max">
-											<div class="product-label">
-												<span class="sale">-5%</span>
-												<span class="new">MỚI</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Apple</p>
-											<h3 class="product-name"><a href="#">iPhone 16 Pro Max 256GB</a></h3>
-											<h4 class="product-price">34.990.000₫ <del
-													class="product-old-price">36.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 1 -->
-
-									<!-- Sản phẩm 2: Samsung Galaxy S24 Ultra -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9VQJypbH-hj9mlWjASceVjvWgOtIrBXC9TKnULh7wYu2I_YBhw-7D6wYK&s=10"
-												alt="Samsung Galaxy S24 Ultra">
-											<div class="product-label">
-												<span class="sale">-15%</span>
-												<span class="new">HOT</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Samsung</p>
-											<h3 class="product-name"><a href="#">Samsung Galaxy S24 Ultra 12GB/256GB</a>
-											</h3>
-											<h4 class="product-price">28.890.000₫ <del
-													class="product-old-price">33.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 2 -->
-
-									<!-- Sản phẩm 3: Xiaomi 14 Ultra -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI90uaD0oEsXD_lZiG9PBVE08Jw5yizEmzEp_cu21QzkKiVe7HHXx9kGk&s=10"
-												alt="Xiaomi 14 Ultra">
-											<div class="product-label">
-												<span class="sale">-10%</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Xiaomi</p>
-											<h3 class="product-name"><a href="#">Xiaomi 14 Ultra 16GB/512GB</a></h3>
-											<h4 class="product-price">29.690.000₫ <del
-													class="product-old-price">32.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-o"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 3 -->
-
-									<!-- Sản phẩm 4: OPPO Find N3 Flip -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScR1Q-WWCb5hF7pX-EHbUlzhLn0RD_d0-R6gcTr1UyacjrGyDbe5Y3h2Y6&s=10"
-												alt="OPPO Find N3 Flip">
-											<div class="product-label">
-												<span class="sale">-20%</span>
-												<span class="new">HOT</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">OPPO</p>
-											<h3 class="product-name"><a href="#">OPPO Find N3 Flip 12GB/256GB</a></h3>
-											<h4 class="product-price">18.390.000₫ <del
-													class="product-old-price">22.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 4 -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="products-tabs">
-							<!-- tab: Điện thoại -->
-							<div id="tab-smartphones" class="tab-pane active">
-								<div class="products-slick" data-nav="#slick-nav-1">
-
-									<!-- Sản phẩm 1: iPhone 15 Pro Max -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png"
-												alt="iPhone 15 Pro Max">
-											<div class="product-label">
-												<span class="sale">-12%</span>
-												<span class="new">HOT</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Apple</p>
-											<h3 class="product-name"><a href="#">iPhone 15 Pro Max 256GB</a></h3>
-											<h4 class="product-price">29.490.000₫ <del
-													class="product-old-price">33.490.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 1 -->
-
-									<!-- Sản phẩm 2: Samsung Galaxy Z Fold6 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-fold-6-hong_5_.png"
-												alt="Samsung Galaxy Z Fold6">
-											<div class="product-label">
-												<span class="sale">-8%</span>
-												<span class="new">MỚI</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Samsung</p>
-											<h3 class="product-name"><a href="#">Samsung Galaxy Z Fold6 12GB/256GB</a>
-											</h3>
-											<h4 class="product-price">40.390.000₫ <del
-													class="product-old-price">43.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 2 -->
-
-									<!-- Sản phẩm 3: ASUS ROG Phone 8 Pro -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4cWmHmUafnNOOU9VuZisDXQL3YYeNwfvotDZWSv1bvrZSPmiNM7CWYOg&s=10"
-												alt="ASUS ROG Phone 8 Pro">
-											<div class="product-label">
-												<span class="sale">-10%</span>
-												<span class="new">GAMING</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">ASUS</p>
-											<h3 class="product-name"><a href="#">ASUS ROG Phone 8 Pro 16GB/512GB</a>
-											</h3>
-											<h4 class="product-price">26.990.000₫ <del
-													class="product-old-price">29.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 3 -->
-
-									<!-- Sản phẩm 4: Google Pixel 8 Pro -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/o/google-pixel-8-pro.png"
-												alt="Google Pixel 8 Pro">
-											<div class="product-label">
-												<span class="sale">-18%</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Google</p>
-											<h3 class="product-name"><a href="#">Google Pixel 8 Pro 12GB/128GB</a></h3>
-											<h4 class="product-price">18.990.000₫ <del
-													class="product-old-price">22.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-o"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										
-									</div>
-									<!-- /Sản phẩm 4 -->
-
-								</div>
-							</div>
+					<div id="tab-smartphones" class="tab-pane active">
+						<div class="row" id="product-list">
 						</div>
 					</div>
 				</div>
@@ -803,7 +322,61 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js"></script><script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const authContainer = document.getElementById('auth-links');
+
+        // Lấy thông tin user đăng nhập từ localStorage hoặc sessionStorage
+        const currentUser = JSON.parse(localStorage.getItem('currentUser')) || 
+                            JSON.parse(sessionStorage.getItem('currentUser'));
+
+        if (currentUser) {
+            // ĐÃ ĐĂNG NHẬP: Hiển thị Profile và Nút Đăng xuất
+            authContainer.innerHTML = `
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa fa-user-o"></i> ${currentUser.fullName || 'Tài khoản'}
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="btnLogout">
+                        <i class="fa fa-sign-out"></i> Đăng xuất
+                    </a>
+                </li>
+            `;
+
+            // Bắt sự kiện Đăng xuất
+            document.getElementById('btnLogout').addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Xóa phiên làm việc khỏi cả 2 bộ nhớ
+                localStorage.removeItem('currentUser');
+                sessionStorage.removeItem('currentUser');
+
+                alert('Đã đăng xuất thành công!');
+                window.location.reload(); // Tải lại trang để cập nhật giao diện
+            });
+
+        } else {
+            // CHƯA ĐĂNG NHẬP: Hiển thị Nút Đăng nhập / Đăng ký
+            authContainer.innerHTML = `
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-in"></i> Đăng nhập
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-user-plus"></i> Đăng ký
+                    </a>
+                </li>
+            `;
+        }
+    });
+</script>
+	<script src="js/app.js"></script>
 
 </body>
 

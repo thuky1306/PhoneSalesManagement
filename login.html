@@ -4,294 +4,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Đăng Nhập - Electro Store</title>
-	<!-- Google Font & FontAwesome Icon -->
+	<title>Đăng Nhập - PhoneSale Store</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<style>
-		:root {
-			--primary: #d10024;
-			--primary-hover: #a8001d;
-			--dark: #1e1f29;
-			--text-main: #2b2d42;
-			--text-muted: #8d99ae;
-			--bg-body: #f4f6f9;
-			--border-color: #eef0f4;
-			--radius: 12px;
-			--shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-		}
-
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-
-		body {
-			font-family: 'Montserrat', sans-serif;
-			background: var(--bg-body);
-			color: var(--text-main);
-			min-height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 20px;
-		}
-
-		.auth-card {
-			background: #ffffff;
-			width: 100%;
-			max-width: 440px;
-			border-radius: var(--radius);
-			box-shadow: var(--shadow);
-			border: 1px solid var(--border-color);
-			padding: 40px 32px;
-			transition: all 0.3s ease;
-		}
-
-		.auth-header {
-			text-align: center;
-			margin-bottom: 30px;
-		}
-
-		.auth-header .brand-logo {
-			font-size: 26px;
-			font-weight: 800;
-			color: var(--dark);
-			text-decoration: none;
-			letter-spacing: -0.5px;
-			display: inline-block;
-			margin-bottom: 12px;
-		}
-
-		.auth-header .brand-logo span {
-			color: var(--primary);
-		}
-
-		.auth-header h2 {
-			font-size: 22px;
-			font-weight: 700;
-			color: var(--dark);
-			margin-bottom: 6px;
-		}
-
-		.auth-header p {
-			font-size: 13px;
-			color: var(--text-muted);
-		}
-
-		/* Form Controls */
-		.form-group {
-			margin-bottom: 20px;
-			position: relative;
-		}
-
-		.form-label {
-			display: block;
-			font-size: 12px;
-			font-weight: 700;
-			text-transform: uppercase;
-			color: var(--dark);
-			margin-bottom: 8px;
-			letter-spacing: 0.3px;
-		}
-
-		.input-wrapper {
-			position: relative;
-			display: flex;
-			align-items: center;
-		}
-
-		.input-wrapper i.input-icon {
-			position: absolute;
-			left: 14px;
-			color: var(--text-muted);
-			font-size: 15px;
-		}
-
-		.form-input {
-			width: 100%;
-			padding: 12px 14px 12px 42px;
-			border: 1px solid var(--border-color);
-			border-radius: 8px;
-			font-size: 14px;
-			font-family: inherit;
-			color: var(--text-main);
-			background: #fbfbfd;
-			outline: none;
-			transition: all 0.2s ease;
-		}
-
-		.form-input:focus {
-			border-color: var(--primary);
-			background: #ffffff;
-			box-shadow: 0 0 0 3px rgba(209, 0, 36, 0.1);
-		}
-
-		.toggle-password {
-			position: absolute;
-			right: 14px;
-			cursor: pointer;
-			color: var(--text-muted);
-			font-size: 14px;
-		}
-
-		/* Flex Utilities */
-		.form-actions {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-bottom: 24px;
-			font-size: 13px;
-		}
-
-		.remember-me {
-			display: flex;
-			align-items: center;
-			gap: 8px;
-			cursor: pointer;
-			color: var(--text-main);
-			font-weight: 500;
-		}
-
-		.remember-me input {
-			accent-color: var(--primary);
-			width: 16px;
-			height: 16px;
-			cursor: pointer;
-		}
-
-		.forgot-link {
-			color: var(--primary);
-			text-decoration: none;
-			font-weight: 600;
-			transition: color 0.2s ease;
-		}
-
-		.forgot-link:hover {
-			text-decoration: underline;
-		}
-
-		/* Submit Button */
-		.btn-primary {
-			width: 100%;
-			background: var(--primary);
-			color: #ffffff;
-			border: none;
-			padding: 14px;
-			border-radius: 8px;
-			font-size: 14px;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 0.5px;
-			cursor: pointer;
-			box-shadow: 0 4px 12px rgba(209, 0, 36, 0.3);
-			transition: all 0.3s ease;
-		}
-
-		.btn-primary:hover {
-			background: var(--primary-hover);
-			box-shadow: 0 6px 18px rgba(209, 0, 36, 0.4);
-			transform: translateY(-1px);
-		}
-
-		/* Divider & Socials */
-		.divider {
-			display: flex;
-			align-items: center;
-			text-align: center;
-			margin: 24px 0;
-			color: var(--text-muted);
-			font-size: 12px;
-			font-weight: 600;
-			text-transform: uppercase;
-		}
-
-		.divider::before,
-		.divider::after {
-			content: '';
-			flex: 1;
-			border-bottom: 1px solid var(--border-color);
-		}
-
-		.divider span {
-			padding: 0 12px;
-		}
-
-		.social-login {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 12px;
-		}
-
-		.btn-social {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 8px;
-			padding: 10px;
-			border: 1px solid var(--border-color);
-			border-radius: 8px;
-			background: #ffffff;
-			color: var(--text-main);
-			font-size: 13px;
-			font-weight: 600;
-			cursor: pointer;
-			transition: all 0.2s ease;
-			text-decoration: none;
-		}
-
-		.btn-social:hover {
-			background: #f8f9fa;
-			border-color: #cbd5e0;
-		}
-
-		.btn-social i {
-			font-size: 16px;
-		}
-
-		.btn-google i {
-			color: #ea4335;
-		}
-
-		.btn-facebook i {
-			color: #1877f2;
-		}
-
-		/* Footer */
-		.auth-footer {
-			text-align: center;
-			margin-top: 28px;
-			font-size: 13px;
-			color: var(--text-muted);
-		}
-
-		.auth-footer a {
-			color: var(--primary);
-			font-weight: 700;
-			text-decoration: none;
-		}
-
-		.auth-footer a:hover {
-			text-decoration: underline;
-		}
-	</style>
+	<link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
 
 	<div class="auth-card">
-		<!-- Brand / Header -->
 		<div class="auth-header">
 			<a href="#" class="brand-logo">PhoneSale<span>.</span></a>
 			<h2>Chào mừng trở lại!</h2>
 			<p>Nhập thông tin để truy cập tài khoản của bạn</p>
 		</div>
 
-		<!-- Login Form -->
-		<form action="index.html" method="GET">
+		<form id="loginForm" novalidate>
 			<div class="form-group">
 				<label class="form-label">Email hoặc Số điện thoại</label>
 				<div class="input-wrapper">
@@ -311,7 +41,7 @@
 
 			<div class="form-actions">
 				<label class="remember-me">
-					<input type="checkbox">
+					<input type="checkbox" id="rememberMe">
 					<span>Ghi nhớ đăng nhập</span>
 				</label>
 				<a href="#" class="forgot-link">Quên mật khẩu?</a>
@@ -320,7 +50,6 @@
 			<button type="submit" class="btn-primary">Đăng Nhập</button>
 		</form>
 
-		<!-- Social Login -->
 		<div class="divider"><span>Hoặc tiếp tục với</span></div>
 
 		<div class="social-login">
@@ -332,17 +61,30 @@
 			</a>
 		</div>
 
-		<!-- Footer Link -->
 		<div class="auth-footer">
 			Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a>
 		</div>
 	</div>
 
 	<script>
+		function togglePasswordVisibility(inputId, icon) {
+			const input = document.getElementById(inputId);
+			if (input.type === 'password') {
+				input.type = 'text';
+				icon.classList.remove('fa-eye');
+				icon.classList.add('fa-eye-slash');
+			} else {
+				input.type = 'password';
+				icon.classList.remove('fa-eye-slash');
+				icon.classList.add('fa-eye');
+			}
+		}
+
 		document.addEventListener('DOMContentLoaded', function () {
-			const loginForm = document.querySelector('form');
-			const emailInput = loginForm.querySelector('input[type="text"]');
+			const loginForm = document.getElementById('loginForm');
+			const accountInput = loginForm.querySelector('input[type="text"]');
 			const passwordInput = document.getElementById('loginPassword');
+			const rememberMeCheckbox = document.getElementById('rememberMe');
 
 			function showError(input, message) {
 				const wrapper = input.closest('.form-group');
@@ -378,7 +120,7 @@
 					showError(input, 'Vui lòng nhập Email hoặc Số điện thoại.');
 					return false;
 				} else if (!emailRegex.test(value) && !phoneRegex.test(value)) {
-					showError(input, 'Email hoặc Số điện thoại không hợp lệ.');
+					showError(input, 'Email hoặc Số điện thoại không đúng định dạng.');
 					return false;
 				}
 				clearError(input);
@@ -394,15 +136,48 @@
 				return true;
 			}
 
-			emailInput.addEventListener('blur', () => validateEmailOrPhone(emailInput));
+			accountInput.addEventListener('blur', () => validateEmailOrPhone(accountInput));
 			passwordInput.addEventListener('blur', () => validatePassword(passwordInput));
 
 			loginForm.addEventListener('submit', function (e) {
-				const isEmailValid = validateEmailOrPhone(emailInput);
+				e.preventDefault();
+
+				const isAccountValid = validateEmailOrPhone(accountInput);
 				const isPasswordValid = validatePassword(passwordInput);
 
-				if (!isEmailValid || !isPasswordValid) {
-					e.preventDefault();
+				if (isAccountValid && isPasswordValid) {
+					const accountValue = accountInput.value.trim();
+					const passwordValue = passwordInput.value;
+
+					const users = JSON.parse(localStorage.getItem('users')) || [];
+
+					const user = users.find(u => u.email === accountValue || u.phone === accountValue);
+
+					if (!user) {
+						showError(accountInput, 'Tài khoản không tồn tại trong hệ thống.');
+						return;
+					}
+
+					if (user.password !== passwordValue) {
+						showError(passwordInput, 'Mật khẩu không chính xác.');
+						return;
+					}
+
+					const sessionUser = {
+						id: user.id,
+						fullName: user.fullName,
+						email: user.email,
+						phone: user.phone
+					};
+
+					if (rememberMeCheckbox.checked) {
+						localStorage.setItem('currentUser', JSON.stringify(sessionUser));
+					} else {
+						sessionStorage.setItem('currentUser', JSON.stringify(sessionUser));
+					}
+
+					alert(`Đăng nhập thành công! Chào mừng ${user.fullName}`);
+					window.location.href = 'index.html';
 				}
 			});
 		});

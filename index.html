@@ -28,8 +28,6 @@
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
-
-
 </head>
 
 <body>
@@ -43,10 +41,9 @@
 					<li><a href="#"><i class="fa fa-envelope-o"></i> cskh@phonesale.com</a></li>
 					<li><a href="#"><i class="fa fa-map-marker"></i> 218-220 Trần Quang Khải, Q1, TP.HCM</a></li>
 				</ul>
-				<ul class="header-links pull-right">
+				<ul class="header-links pull-right" id="auth-links">
 					<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-					<li><a href="profile.html"><i class="fa fa-user-o"></i> Tài khoản</a></li>
-					<li><a href="login.html">Đăng nhập</a></li>
+
 				</ul>
 			</div>
 		</div>
@@ -73,7 +70,7 @@
 					<div class="col-md-6">
 						<div class="header-search">
 							<form action="products.html">
-								
+
 								<input class="input" placeholder="Search here">
 								<button class="search-btn">Search</button>
 							</form>
@@ -84,48 +81,15 @@
 					<!-- ACCOUNT -->
 					<div class="col-md-3 clearfix">
 						<div class="header-ctn">
-							
+
 
 							<!-- Cart -->
 							<div class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+								<a href="cart.html">
 									<i class="fa fa-shopping-cart"></i>
 									<span>Giỏ Hàng</span>
-									<div class="qty">3</div>
+									
 								</a>
-								<div class="cart-dropdown">
-									<div class="cart-list">
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product01.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="./img/product02.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-											</div>
-											<button class="delete"><i class="fa fa-close"></i></button>
-										</div>
-									</div>
-									<div class="cart-summary">
-										<small>3 Item(s) selected</small>
-										<h5>SUBTOTAL: $2940.00</h5>
-									</div>
-									<div class="cart-btns">
-										<a href="cart.html">Xem giỏ hàng</a>
-										<a href="#">Đặt hàng <i class="fa fa-arrow-circle-right"></i></a>
-									</div>
-								</div>
 							</div>
 							<!-- /Cart -->
 
@@ -197,193 +161,8 @@
 							<div id="tab-smartphones" class="tab-pane active">
 								<div class="products-slick" data-nav="#slick-nav-1">
 
-									<!-- Sản phẩm 1 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNBbctQQedKznqcd1AkoaFiHRRMGHPRpoVDnJPe3tbq2g7DAHgwY0f8w&s=10"
-												alt="iPhone 17 Pro Max">
-											<div class="product-label">
-												<span class="sale">-10%</span>
-												<span class="new">MỚI</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Apple</p>
-											<h3 class="product-name"><a href="#">iPhone 17 Pro Max 256GB</a></h3>
-											<h4 class="product-price">32.990.000₫ <del
-													class="product-old-price">33.290.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào
-												giỏ hàng</button>
-										</div>
-									</div>
-									<!-- /Sản phẩm 1 -->
-
-									<!-- Sản phẩm 2 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg"
-												alt="Samsung Galaxy S22 Ultra">
-											<div class="product-label">
-												<span class="new">HOT</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Samsung</p>
-											<h3 class="product-name"><a href="#">Samsung Galaxy S22 Ultra 5G</a></h3>
-											<h4 class="product-price">12.990.000₫ <del
-													class="product-old-price">31.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào
-												giỏ hàng</button>
-										</div>
-									</div>
-									<!-- /Sản phẩm 2 -->
-
-									<!-- Sản phẩm 3 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-14-pre-den.png"
-												alt="Xiaomi 14">
-											<div class="product-label">
-												<span class="sale">-12%</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Xiaomi</p>
-											<h3 class="product-name"><a href="#">Xiaomi 14 512GB</a></h3>
-											<h4 class="product-price">26.390.000₫ <del
-													class="product-old-price">29.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-o"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào
-												giỏ hàng</button>
-										</div>
-									</div>
-									<!-- /Sản phẩm 3 -->
-
-									<!-- Sản phẩm 4 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGUzEhm2GtyGTFuNmyjnJ4M1Lqq7OIGu3jpGOnf2rkdYa6QLZb6jhsPU&s=10"
-												alt="OPPO Find N3 Flip">
-											<div class="product-label">
-												<span class="new">MỚI</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">OPPO</p>
-											<h3 class="product-name"><a href="#">OPPO Find N3 Flip 5G</a></h3>
-											<h4 class="product-price">19.990.000₫ <del
-													class="product-old-price">22.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào
-												giỏ hàng</button>
-										</div>
-									</div>
-									<!-- /Sản phẩm 4 -->
-
-									<!-- Sản phẩm 5 -->
-									<div class="product">
-										<div class="product-img">
-											<img src="https://didongmango.com/images/products/2025/05/30/large/untitled-1_1748663246.jpg"
-												alt="Samsung Galaxy Z Fold5">
-											<div class="product-label">
-												<span class="sale">-20%</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Samsung</p>
-											<h3 class="product-name"><a href="#">Samsung Galaxy Z Fold5 256GB</a></h3>
-											<h4 class="product-price">32.790.000₫ <del
-													class="product-old-price">40.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">Thêm vào yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">So sánh sản phẩm</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào
-												giỏ hàng</button>
-										</div>
-									</div>
 
 								</div>
-								<div id="slick-nav-1" class="products-slick-nav"></div>
 							</div>
 						</div>
 					</div>
@@ -466,197 +245,13 @@
 				<div class="col-md-12">
 					<div class="row">
 						<div class="products-tabs">
-							<!-- tab -->
-							<div id="tab2" class="tab-pane fade in active">
+							<!-- tab: Điện thoại -->
+							<div id="tab2" class="tab-pane active">
 								<div class="products-slick" data-nav="#slick-nav-2">
 
-									<!-- product 1 -->
-									<div class="product">
-										<div class="product-img">
-
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTa1061_cU5ZVMJBDvH1_D-qW8IO0-2jwSlDda3NWgADwprFCVaQ7gadk&s=10"
-												alt="iPhone 15 Pro Max">
-											<div class="product-label">
-												<span class="sale">-15%</span>
-												<span class="new">MỚI</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Apple</p>
-											<h3 class="product-name"><a href="#">iPhone 15 Pro Max 256GB</a></h3>
-											<h4 class="product-price">29.990.000₫ <del
-													class="product-old-price">34.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">thêm yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">so sánh</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
-										</div>
-									</div>
-									<!-- /product 1 -->
-
-									<!-- product 2 -->
-									<div class="product">
-										<div class="product-img">
-
-											<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ5M3bv3fV0KC_Oa39gga5fg80hRY2ZYRunJnovm_ZEQ&s=10"
-												alt="Samsung Galaxy S24 Ultra">
-											<div class="product-label">
-												<span class="new">HOT</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Samsung</p>
-											<h3 class="product-name"><a href="#">Samsung Galaxy S24 Ultra 256GB</a></h3>
-											<h4 class="product-price">25.290.000₫ <del
-													class="product-old-price">33.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-o"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">thêm yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">so sánh</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
-										</div>
-									</div>
-									<!-- /product 2 -->
-
-									<!-- product 3 -->
-									<div class="product">
-										<div class="product-img">
-
-											<img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-14-ultra_3.png"
-												alt="Xiaomi 14 Ultra">
-											<div class="product-label">
-												<span class="sale">-27%</span>
-											</div>
-										</div>
-										<div class="product-body">
-											<p class="product-category">Xiaomi</p>
-											<h3 class="product-name"><a href="#">Xiaomi 14 Ultra 512GB</a></h3>
-											<h4 class="product-price">24.090.000₫ <del
-													class="product-old-price">32.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">thêm yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">so sánh</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
-										</div>
-									</div>
-									<!-- /product 3 -->
-
-									<!-- product 4 -->
-									<div class="product">
-										<div class="product-img">
-
-											<img src="https://sonpixel.vn/wp-content/uploads/2023/08/Google-Pixel-8-Pro-SonPixel.jpg"
-												alt="Google Pixel 8 Pro">
-										</div>
-										<div class="product-body">
-											<p class="product-category">Google</p>
-											<h3 class="product-name"><a href="#">Google Pixel 8 Pro 128GB</a></h3>
-											<h4 class="product-price">18.500.000₫ <del
-													class="product-old-price">21.000.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">thêm yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">so sánh</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
-										</div>
-									</div>
-									<!-- /product 4 -->
-
-									<div class="product">
-										<div class="product-img">
-											<img src="https://cdn.tgdd.vn/Products/Images/42/281570/iphone-15-xanh-thumb-600x600.jpg"
-												alt="iPhone 15 128GB">
-										</div>
-										<div class="product-body">
-											<p class="product-category">Apple</p>
-											<h3 class="product-name"><a href="#">iPhone 15 128GB Chính Hãng</a></h3>
-											<h4 class="product-price">19.490.000₫ <del
-													class="product-old-price">22.990.000₫</del></h4>
-											<div class="product-rating">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-											<div class="product-btns">
-												<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-														class="tooltipp">thêm yêu thích</span></button>
-												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
-														class="tooltipp">so sánh</span></button>
-												<a class="quick-view" href="detail.html"><i class="fa fa-eye"></i><span
-														class="tooltipp"></span></a>
-											</div>
-										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
-										</div>
-									</div>
-									<!-- /product 5 -->
 
 								</div>
-								<div id="slick-nav-2" class="products-slick-nav"></div>
 							</div>
-							<!-- /tab -->
 						</div>
 					</div>
 				</div>
@@ -768,6 +363,59 @@
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.zoom.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const authContainer = document.getElementById('auth-links');
+
+			const currentUser = JSON.parse(localStorage.getItem('currentUser')) ||
+				JSON.parse(sessionStorage.getItem('currentUser'));
+
+			if (currentUser) {
+				authContainer.innerHTML = `
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa fa-user-o"></i> ${currentUser.fullName || 'Tài khoản'}
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="btnLogout">
+                        <i class="fa fa-sign-out"></i> Đăng xuất
+                    </a>
+                </li>
+            `;
+
+				// Bắt sự kiện Đăng xuất
+				document.getElementById('btnLogout').addEventListener('click', function (e) {
+					e.preventDefault();
+
+					// Xóa phiên làm việc khỏi cả 2 bộ nhớ
+					localStorage.removeItem('currentUser');
+					sessionStorage.removeItem('currentUser');
+
+					alert('Đã đăng xuất thành công!');
+					window.location.reload(); // Tải lại trang để cập nhật giao diện
+				});
+
+			} else {
+				// CHƯA ĐĂNG NHẬP: Hiển thị Nút Đăng nhập / Đăng ký
+				authContainer.innerHTML = `
+                <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-in"></i> Đăng nhập
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-user-plus"></i> Đăng ký
+                    </a>
+                </li>
+            `;
+			}
+		});
+	</script>
 
 </body>
 

@@ -1,0 +1,166 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 17 Pro Max 256GB",
+        "category": "Apple",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNBbctQQedKznqcd1AkoaFiHRRMGHPRpoVDnJPe3tbq2g7DAHgwY0f8w&s=10",
+        "price": "32.990.000₫",
+        "oldPrice": "33.290.000₫",
+        "rating": 5,
+        "labels": [
+            {
+                "type": "sale",
+                "text": "-10%"
+            },
+            {
+                "type": "new",
+                "text": "MỚI"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "name": "Samsung Galaxy S22 Ultra 5G",
+        "category": "Samsung",
+        "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
+        "price": "12.990.000₫",
+        "oldPrice": "31.990.000₫",
+        "rating": 5,
+        "labels": [
+            {
+                "type": "new",
+                "text": "HOT"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "name": "Xiaomi 14 512GB",
+        "category": "Xiaomi",
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-14-pre-den.png",
+        "price": "26.390.000₫",
+        "oldPrice": "29.990.000₫",
+        "rating": 4,
+        "labels": [
+            {
+                "type": "sale",
+                "text": "-12%"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "id": 4,
+        "name": "Samsung Galaxy S23 Ultra 5G",
+        "category": "Samsung",
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/2/s23-ultra-tim_6_2.png",
+        "price": "16.990.000₫",
+        "oldPrice": "31.990.000₫",
+        "rating": 5,
+        "labels": [
+            {
+                "type": "new",
+                "text": "HOT"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "id": 5,
+        "name": "iPhone 16 Pro Max 256GB",
+        "category": "Apple",
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png",
+        "price": "34.990.000₫",
+        "oldPrice": "36.990.000₫",
+        "rating": 5,
+        "labels": [
+            {
+                "type": "sale",
+                "text": "-5%"
+            },
+            {
+                "type": "new",
+                "text": "MỚI"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "id": 6,
+        "name": "Samsung Galaxy S24 Ultra 12GB/256GB",
+        "category": "Samsung",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9VQJypbH-hj9mlWjASceVjvWgOtIrBXC9TKnULh7wYu2I_YBhw-7D6wYK&s=10",
+        "price": "28.890.000₫",
+        "oldPrice": "33.990.000₫",
+        "rating": 5,
+        "labels": [
+            {
+                "type": "sale",
+                "text": "-15%"
+            },
+            {
+                "type": "new",
+                "text": "HOT"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "id": 7,
+        "name": "Xiaomi 14 Ultra 16GB/512GB",
+        "category": "Xiaomi",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI90uaD0oEsXD_lZiG9PBVE08Jw5yizEmzEp_cu21QzkKiVe7HHXx9kGk&s=10",
+        "price": "29.690.000₫",
+        "oldPrice": "32.990.000₫",
+        "rating": 4,
+        "labels": [
+            {
+                "type": "sale",
+                "text": "-10%"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "id": 8,
+        "name": "OPPO Find N3 Flip 12GB/256GB",
+        "category": "OPPO",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScR1Q-WWCb5hF7pX-EHbUlzhLn0RD_d0-R6gcTr1UyacjrGyDbe5Y3h2Y6&s=10",
+        "price": "18.390.000₫",
+        "oldPrice": "22.990.000₫",
+        "rating": 5,
+        "labels": [
+            {
+                "type": "sale",
+                "text": "-20%"
+            },
+            {
+                "type": "new",
+                "text": "HOT"
+            }
+        ],
+        "link": "#"
+    },
+    {
+        "id": 9,
+        "name": "iPhone 15 Pro Max 256GB",
+        "category": "Apple",
+        "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png",
+        "price": "29.490.000₫",
+        "oldPrice": "33.490.000₫",
+        "rating": 5,
+        "labels": [
+            {
+                "type": "sale",
+                "text": "-12%"
+            },
+            {
+                "type": "new",
+                "text": "HOT"
+            }
+        ],
+        "link": "#"
+    }
+]

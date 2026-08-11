@@ -2279,10 +2279,8 @@ textarea.input {
 
 .logo-text:hover {
   transform: scale(1.03);
-  /* Hiệu ứng phóng to nhẹ khi di chuột */
 }
 
-/* Phần chữ "Phone" */
 .brand-phone {
   color: #cccccc;
 }
@@ -2294,8 +2292,39 @@ textarea.input {
   -webkit-text-fill-color: transparent;
 }
 
-/* Dấu chấm điểm nhấn */
 .brand-dot {
   color: #D10024;
   font-size: 32px;
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#product-list>[class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product .product-img {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product .product-img img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
 }
