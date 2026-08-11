@@ -258,7 +258,7 @@
 							Tôi đã đọc <a href="#">Điều khoản thanh toán</a>
 						</label>
 					</div>
-					<a href="index.html" class="primary-btn order-submit">Đặt hàng</a>
+					<button type="button" onclick="handleOrder()" class="primary-btn order-submit">Đặt hàng</a>
 				</div>
 				<!-- /Order Details -->
 			</div>
@@ -467,6 +467,10 @@
 				orderTotalElement.textContent = formatCurrency(grandTotal);
 			}
 		});
+		function handleOrder() {
+			alert('Đặt hàng thành công!');
+			window.location.href = 'index.html'
+		}
 	</script>
 
 </body>
